@@ -1,16 +1,42 @@
-
 // 二分搜索
 
 /* pseudo code of binary search */
-initialize range to 0..n-1
+initialize range to [0,n)
 loop
-  {invariant: mustbe(range) }
-  if range is empty, then
+  { invariant: mustbe(range) }
+  if range is empty,
     break and report that t is not in the array
-  else
-    compute m, the middle of the range
-    use m as a probe to shrink the range
-      if t is found during the shrinking process,
-      break and report its position
-      
-      
+  compute m, the middle of the range
+  use m as a probe to shrink the range
+    if t is found during the shrinking process,
+    break and report its position
+
+
+
+
+// initialize range to [0,n)
+int lower = 0;
+int upper = n;
+int middle;
+int p = 0;
+
+loop
+  { invariant: mustbe(range) }
+  // if range is empty,
+  if (upper >= lower)
+    // break and report that t is not in the array
+    p = -1;
+    break;
+  // compute m, the middle of the range
+  // use m as a probe to shrink the range
+  middle = (lower+upper) / 2; 
+  if(x[m] < t){
+  
+  } else if (x[middle] > t) {
+  
+  } else {
+    p 
+  }
+    // if t is found during the shrinking process,
+    // break and report its position
+
