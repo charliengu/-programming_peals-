@@ -1,0 +1,16 @@
+
+// 二分搜索
+
+/* pseudo code of binary search */
+initialize range to 0..n-1
+loop
+  {invariant: mustbe(range) }
+  if range is empty, then
+    break and report that t is not in the array
+  else
+    compute m, the middle of the range
+    use m as a probe to shrink the range
+      if t is found during the shrinking process,
+      break and report its position
+      
+      
